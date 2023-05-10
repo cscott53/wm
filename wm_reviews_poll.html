@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Wafflemania - Reviews poll</title>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Links -->
+    <link href="wm_styles.css" rel="stylesheet" />
+    <link href="wm_responsive-design.css" rel="stylesheet" />
+	<script src="wm_script.js" defer></script>
+</head>
+<body>
+    <div id="body">
+        <header id="date-and-time">
+            <!-- Will contain date and time -->
+        </header>
+        <!-- Inline image -->
+        <div class="img-wrapper">
+            <img src="wm_logo.png" alt="Wafflemania">
+        </div>
+        <aside id="navbar">
+        <div id="navbar-container">
+        <!-- Nav bar with links -->
+        <nav>
+            <span class="list"><a class="nav" href="wm_home.html">Home</a></span>
+            <span class="list"><a class="nav" href="wm_catering.html">Catering</a></span>
+            <span class="list"><a class="nav" href="wm_menu.html">Menu</a></span>
+            <span class="list"><a class="nav" id="current" href="wm_reviews_poll.html">Reviews poll</a></span>
+        </nav>
+        </div>
+        </aside>
+        <article id="reviews-page">
+          <p id="rate">How would you rate us?</p>
+          <div id="stars_container">
+          <div id="stars_rating">
+              <img src="deselected_star.png" class="star" alt="unchecket" id="star1" />
+              <img src="deselected_star.png" class="star" alt="unchecket" id="star2" />
+              <img src="deselected_star.png" class="star" alt="unchecket" id="star3" />
+              <img src="deselected_star.png" class="star" alt="unchecket" id="star4" />
+              <img src="deselected_star.png" class="star" alt="unchecket" id="star5" />
+          </div>
+          <button id="rate">
+            <p>Rate</p>
+          </button>
+          </div>
+          <div class="form-container">
+              <!-- Form with multiple field sets -->
+              <form method="post">
+                <fieldset>
+                  <table>
+                    <!-- Text input -->
+                    <tr>
+                      <td class="align-right"><label id="name">Name*</label></td>
+                      <td class="align-left"><input type="text" id="name-input" required /></td>
+                      <!-- Required field validation -->
+                    </tr>
+                    <!-- Input set for mobile keyboard --> 
+                    <tr>
+                      <td class="align-right"><label id="tel">Phone#</label></td>
+                      <td class="align-left"><input type="tel" id="tel-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" /></td>
+                    </tr>
+                    <!-- Pattern validation -->
+                    <tr>
+                      <td class="align-right"><label>Email</label></td>
+                      <td class="align-left"><input type="email" pattern=".+@.+\..{2-3}" placeholder="someone@example.com" /></td>
+                    </tr>
+                    <!-- Textarea -->
+                    <tr>
+                      <td class="align-right"><label>Tell us a little bit about yourself</label></td>
+                      <td class="align-left"><textarea></textarea></td>
+                    </tr>
+                    <!-- Selection list -->
+                    <tr>
+                      <td class="align-right"><label id="selection">How did you hear about us?</label></td>
+                      <td class="align-left"><select id="options">
+                      <option class="select" value="default">[Select]</option>
+                      <option class="select" value="Internet">Internet</option>
+                      <option class="select" value="Newspaper/newsletter">Newspaper/newsletter</option>
+                      <option class="select" value="Text-email">Text/email</option>
+                      <option class="select" value="Word of mouth">Word of mouth</option>
+                      <option class="select" value="TV">TV</option>
+                      <option class="select" value="Other">Other</option>
+                    </select></td>
+                    </tr>
+                    <!-- Checkbox -->
+                    <tr>
+                    <td><input type="checkbox" id="newsletter">
+                    <label for="newsletter">Sign me up for the newsletter (sent through email)</label></td>
+                    <td><!-- empty cell --></td>
+                    </tr>
+                  </table>
+                </fieldset>
+                <fieldset>
+                  <table>
+                    <!-- Date/time input -->
+                    <tr>
+                      <td class="align-right"><label>When was your most recent visit?</label></td>
+                      <td class="align-left"><input type="date" /></td>
+                    </tr>
+                    <!-- Range slider -->
+                    <tr>
+                      <td class="align-right"><label>On a scale of 1 to 10, how would you rate us? </label></td>
+                      <td class="align-left"><input type="range" min="1" max="10" step="1" /></td>
+                    </tr>
+                    <!-- Spinner input -->
+                    <tr>
+                      <td class="align-right"><label>How often do you visit? (per month)</label></td>
+                      <td class="align-left"><input type="number" id="spinner" min="0" max="31" step="1" /></td>
+                    </tr>
+                    <!-- Radio buttons -->
+                    <tr>
+                      <td class="align-right"><label id="radio-buttons">How do you prefer your food to be delivered</label></td>
+                      <td><input class="radio" id="option-1" type="radio" />
+                      <label for="option-1">Dine in</label></td>
+                    </tr>
+                    <tr>
+                      <td><!-- empty cell to move next cell to the right --></td>
+                      <td><input class="radio" id="option-2" type="radio" />
+                      <label for="option-2">Takeout</label></td>
+                    </tr>
+                    <tr>
+                      <td><!-- empty cell --></td>
+                      <td><input class="radio" id="option-3" type="radio" />
+                      <label for="option-3">Drive through</label></td>
+                    </tr>
+                    <!-- Datalist -->
+                    <tr>
+                      <td class="align-right"><label>What's your favorite dish (or which one(s) do you like)?</label></td>
+                      <td class="align-left"><input type="text" list="fave-dish" />
+                      <datalist id="fave-dish">
+                        <option class="datalist">Waffles</option>
+                        <option class="datalist">Pancakes</option>
+                        <option class="datalist">Omelette</option>
+                        <option class="datalist">Sausage and eggs</option>
+                      </datalist></td>
+                    </tr>
+                  </table>
+                </fieldset>
+                <!-- Submit and cancel buttons -->
+                <button id="reset"><input type="reset" id="cancel" value="Cancel" />
+                <input type="submit" id="submit" value="Submit" />
+              </form>
+          </div>
+        </article>
+        <footer>
+            Wafflemania &#8226; 806 Phile Ave, Charlotte NC &nbsp; 28437 &#8226; 704-720-8396
+        </footer>
+    </div>
+</body>
+</html>

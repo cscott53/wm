@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* Block elements */
+img, article, section, h1 {
+    display: block;
+}
+/* List formatting, contextual selectors */
+nav span.list a.nav {
+    background-color: black;
+    color: beige;
+    text-decoration: none;
+}
+/* Pseudo-classes */
+p#first-letter::first-letter {
+    font-size: 1.5em;
+}
+/* Pseudo-classes for links */
+a.nav:hover {
+    background-color: rgb(255,253,208);
+    text-decoration: underline;
+}
+a#current {
+    color: brown;
+}
+/* Text formatting */
+h1, article p, li {
+    text-align: center;
+    font-family: Arial, Serif, sans-serif;
+}
+/* Background formatting*/
+h1 {
+    background-color: rgb(100,100,100);
+    color: rgb(255, 253, 208);
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+aside#navbar {
+    background-color: rgb(128,128,128);
+}
+header#date-and-time {
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+}
+.description {
+    margin-top: -10px;
+}
+article#menu-page p, article#menu-page li {
+    font-size: 0.5em;
+}
+article#menu-page p.dt, li.omlette-types:first-of-type {
+    margin-top: -10px;
+}
+li.omelette-types:last-of-type {
+    margin-bottom: -10px;
+}
+img.star {
+    width: 40px;
+    height: 40px;
+}
+div#stars_rating {
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+}
+div#stars_container, p#rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+/* Form styles */
+fieldset {
+    background-color: rgb(248,223,161);
+    display:flex;
+    align-self: center;
+}
+.form-container {
+    height: auto;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* Focus pseudo class for valid and invalid formatting */
+input:focus:valid {
+    background-color: rgb(180,255,180);
+}
+input:focus:invalid {
+    background-color: rgb(255,180,180);
+}
+input:focus {
+    background-color: rgb(200,200,200);
+}
+/* Grid layout */
+tr {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+td.align-right {
+    text-align: right;
+}
+td.aligh-left {
+    text-align: left;
+}
+label {
+    font-size: 0.8em;/* Trying to handle vertical overflow */
+}
+input {
+    height: 10px;
+}
+button {
+    display: block;
+}

@@ -1,0 +1,109 @@
+@charset "utf-8"
+/*  ==========================================
+    Desktop and tabletstyles (more than 767px)
+    ==========================================
+*/
+@media only screen and (min-width:768px) {
+    div#body {
+	background-color: beige;
+	padding-left: 20%;
+	padding-right: 20%;
+    }
+    ul li.omelette-types {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: auto 20%;
+    }
+    p.description {
+	margin-top: -10px;
+    }
+}
+/*  ==========================
+    Mobile styles (0 to 480px)
+    ==========================
+*/
+@media only screen and (max-width:480px) {
+    div#body {
+	padding: 0%;
+    }
+    a.nav {
+	font-size: 1em
+    }
+    aside#navbar {
+	margin: 0px 10px;
+    }
+    h1 {
+	width: 80%;
+    }
+    html, body, div#body {
+	width: 100%;
+    }
+    body {
+	background-color: tan
+    }
+    img {
+	width: 90%;
+    }
+    br {
+	display: none;
+    }
+}
+/* All devices */
+body {
+    background-color: grey;
+    width:100%;
+    margin: 0px auto;
+}
+article#homepage, article#catering-page {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+div#body {
+    background-color: tan;
+    width: 80%;
+    margin: 0px auto;
+}
+html, body, div#body {
+    height: 100%;
+}
+aside#navbar {
+    margin: 20px auto;
+    width: 75%;
+    padding: 5px;
+}
+nav span.list a.nav {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img, img {
+    margin: auto;
+    display: flex;
+    justify-content: center
+    align-self: center;
+}
+/* Absolute positioning */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: solid black;
+    margin-top: 10%;
+    margin-right: auto;
+}
+aside#navbar div#navbar-container {
+    text-align: center;
+    font-size: 1.5em;
+}
+li {
+    list-style-type: none;
+    text-align: center;
+}
+ul#drinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+article#catering-page p {
+    margin: 0px auto;
+}

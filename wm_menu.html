@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wafflemania Menu</title>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Links -->
+    <link href="wm_styles.css" rel="stylesheet" />
+    <link href="wm_responsive-design.css" rel="stylesheet" />
+	<script src="wm_script.js" defer></script>
+	<!-- These styles wouldn't apply for some reason -->
+	<style>
+		li, p {
+			font-size: 0.75em;
+		}
+		p#omelette {
+			margin-top: 20px;
+			margin-bottom: -10px;
+		}
+	</style>
+</head>
+<body>
+  <div id="body">
+	  <header id="date-and-time">
+		  <!-- Will contain date and time -->
+	  </header>
+    <!-- Inline image -->
+    <div class="img-wraper" id="logo">
+	<img src="wm_logo.png" alt="Wafflemania">
+    </div>
+    <aside id="navbar">
+	<div id="navbar-container">
+	<!-- Nav bar with links -->
+	<nav>
+		<span class="list"><a class="nav" href="wm_home.html">Home</a></span>
+		<span class="list"><a class="nav" href="wm_catering.html">Catering</a></span>
+		<span class="list"><a class="nav" id="current" href="wm_menu.html">Menu</a></span>
+		<span class="list"><a class="nav" href="wm_reviews_poll.html">Review polls</a></span>
+	</nav>
+	</div>
+    </aside>
+    <article id="menu">
+	<section>
+	    <p class="dt">Waffles</p>
+	    <p class="description">Options for syrup flavor and temp (warm/cold)</p>
+	    <p class="dt" id="omelette">Omelettes</p>
+	    <ul>
+			<li class="omelette-types">Plain omelette</li>
+			<li class="omelette-types">Sausage, egg, and cheese omelette</li>
+			<li class="omelette-types">Chocolate omelette</li>
+			<li class="omelette-types">Bacon omelette</li>
+	    </ul>
+	    <p class="dt">Fresh fruit</p>
+	    <p class="description">Includes cantaloupe, sliced apples, strawberries,<br /> and
+	    options for either blueberries or grapes</p>
+	    <p class="dt">Eggs</p>
+	    <p class="description">Options for fried or scrambled, and ingredients <br />(sausage,
+	    cheese, and/or bacon bits)</p>
+	    <p class="dt">Sausage</p>
+	    <p class="description">Options for links or patties</p>
+	    <p class="dt">Pancakes</p>
+	    <p class="description"> Options for type (normal, chocolate chip, or blueberry) <br />
+	    and syrup temperature (warm/cold) and flavor (normal, chocolate, strawberry)
+	    <p class="dt">Drinks</p>
+	    <ul id="drinks">
+			<li class="drinks">Hot chocolate</li>
+			<li class="drinks">Coffee/tea (caffeinated or decaf with options for ingredients)</li>
+			<li class="drinks">Smoothies (several flavor options)</li>
+			<li class="drinks">Water</li>
+			<li class="drinks">Kool-aid</li>
+    </article>
+    <!-- Generated random numbers for apress, zip code, and phone number -->
+    <footer id="menu-page">
+	Wafflemania &#8226; 806 Phile Ave, Charlotte NC &nbsp; 28437 &#8226; 704-720-8396
+    </footer>
+  </div>
+</body>
+</html>
